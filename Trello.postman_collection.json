@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "d0031741-6464-41e7-8f6b-0d3a7d6e2208",
+		"name": "Trello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24332564"
+	},
+	"item": [
+		{
+			"name": "Create a Board",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name={Vasu}&key=746cb941fb6a2b28f4ca41f7b4f4b550&token=7f6103bc05b173e979a377c6a858b5901a824bab735c4645e77c9586072f4278",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "{Vasu}"
+						},
+						{
+							"key": "key",
+							"value": "746cb941fb6a2b28f4ca41f7b4f4b550"
+						},
+						{
+							"key": "token",
+							"value": "7f6103bc05b173e979a377c6a858b5901a824bab735c4645e77c9586072f4278"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Board",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/meuFHqex?key=746cb941fb6a2b28f4ca41f7b4f4b550&token=7f6103bc05b173e979a377c6a858b5901a824bab735c4645e77c9586072f4278",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"meuFHqex"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "746cb941fb6a2b28f4ca41f7b4f4b550"
+						},
+						{
+							"key": "token",
+							"value": "7f6103bc05b173e979a377c6a858b5901a824bab735c4645e77c9586072f4278"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a Board",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"636ca7ac46b7a00171636983\",\r\n    \"name\": \"{Vasundhara Phadtare}\",\r\n    \"desc\": \"\",\r\n    \"descData\": null,\r\n    \"closed\": false,\r\n    \"idOrganization\": \"636c847b69f0ad01097bebb0\",\r\n    \"idEnterprise\": null,\r\n    \"pinned\": false,\r\n    \"url\": \"https://trello.com/b/cgh9mfeO/vasundhara\",\r\n    \"shortUrl\": \"https://trello.com/b/cgh9mfeO\",\r\n    \"prefs\": {\r\n        \"permissionLevel\": \"private\",\r\n        \"hideVotes\": false,\r\n        \"voting\": \"disabled\",\r\n        \"comments\": \"members\",\r\n        \"invitations\": \"members\",\r\n        \"selfJoin\": true,\r\n        \"cardCovers\": true,\r\n        \"isTemplate\": false,\r\n        \"cardAging\": \"regular\",\r\n        \"calendarFeedEnabled\": false,\r\n        \"hiddenPluginBoardButtons\": [],\r\n        \"switcherViews\": [\r\n            {\r\n                \"_id\": \"636ca7ac46b7a00171636984\",\r\n                \"viewType\": \"Board\",\r\n                \"enabled\": true\r\n            },\r\n            {\r\n                \"_id\": \"636ca7ac46b7a00171636985\",\r\n                \"viewType\": \"Table\",\r\n                \"enabled\": true\r\n            },\r\n            {\r\n                \"_id\": \"636ca7ac46b7a00171636986\",\r\n                \"viewType\": \"Calendar\",\r\n                \"enabled\": false\r\n            },\r\n            {\r\n                \"_id\": \"636ca7ac46b7a00171636987\",\r\n                \"viewType\": \"Dashboard\",\r\n                \"enabled\": false\r\n            },\r\n            {\r\n                \"_id\": \"636ca7ac46b7a00171636988\",\r\n                \"viewType\": \"Timeline\",\r\n                \"enabled\": false\r\n            },\r\n            {\r\n                \"_id\": \"636ca7ac46b7a00171636989\",\r\n                \"viewType\": \"Map\",\r\n                \"enabled\": false\r\n            }\r\n        ],\r\n        \"background\": \"blue\",\r\n        \"backgroundColor\": \"#0079BF\",\r\n        \"backgroundImage\": null,\r\n        \"backgroundImageScaled\": null,\r\n        \"backgroundTile\": false,\r\n        \"backgroundBrightness\": \"dark\",\r\n        \"backgroundBottomColor\": \"#0079BF\",\r\n        \"backgroundTopColor\": \"#0079BF\",\r\n        \"canBePublic\": true,\r\n        \"canBeEnterprise\": true,\r\n        \"canBeOrg\": true,\r\n        \"canBePrivate\": true,\r\n        \"canInvite\": true\r\n    },\r\n    \"labelNames\": {\r\n        \"green\": \"\",\r\n        \"yellow\": \"\",\r\n        \"orange\": \"\",\r\n        \"red\": \"\",\r\n        \"purple\": \"\",\r\n        \"blue\": \"\",\r\n        \"sky\": \"\",\r\n        \"lime\": \"\",\r\n        \"pink\": \"\",\r\n        \"black\": \"\",\r\n        \"green_dark\": \"\",\r\n        \"yellow_dark\": \"\",\r\n        \"orange_dark\": \"\",\r\n        \"red_dark\": \"\",\r\n        \"purple_dark\": \"\",\r\n        \"blue_dark\": \"\",\r\n        \"sky_dark\": \"\",\r\n        \"lime_dark\": \"\",\r\n        \"pink_dark\": \"\",\r\n        \"black_dark\": \"\",\r\n        \"green_light\": \"\",\r\n        \"yellow_light\": \"\",\r\n        \"orange_light\": \"\",\r\n        \"red_light\": \"\",\r\n        \"purple_light\": \"\",\r\n        \"blue_light\": \"\",\r\n        \"sky_light\": \"\",\r\n        \"lime_light\": \"\",\r\n        \"pink_light\": \"\",\r\n        \"black_light\": \"\"\r\n    },\r\n    \"limits\": {}\r\n}"
+				},
+				"url": {
+					"raw": "https://api.trello.com/1/boards/636ca7ac46b7a00171636983?key=746cb941fb6a2b28f4ca41f7b4f4b550&token=7f6103bc05b173e979a377c6a858b5901a824bab735c4645e77c9586072f4278",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"636ca7ac46b7a00171636983"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "746cb941fb6a2b28f4ca41f7b4f4b550"
+						},
+						{
+							"key": "token",
+							"value": "7f6103bc05b173e979a377c6a858b5901a824bab735c4645e77c9586072f4278"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a board",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name={Vasundhara}&key=746cb941fb6a2b28f4ca41f7b4f4b550&token=7f6103bc05b173e979a377c6a858b5901a824bab735c4645e77c9586072f4278",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "{Vasundhara}"
+						},
+						{
+							"key": "key",
+							"value": "746cb941fb6a2b28f4ca41f7b4f4b550"
+						},
+						{
+							"key": "token",
+							"value": "7f6103bc05b173e979a377c6a858b5901a824bab735c4645e77c9586072f4278"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a Card",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/636ca7ac46b7a00171636983?key=746cb941fb6a2b28f4ca41f7b4f4b550&token=7f6103bc05b173e979a377c6a858b5901a824bab735c4645e77c9586072f4278",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"636ca7ac46b7a00171636983"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "746cb941fb6a2b28f4ca41f7b4f4b550"
+						},
+						{
+							"key": "token",
+							"value": "7f6103bc05b173e979a377c6a858b5901a824bab735c4645e77c9586072f4278"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

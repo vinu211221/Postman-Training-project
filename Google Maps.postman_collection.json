@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "df31dd59-7264-40f0-a69a-8551e2475399",
+		"name": "Google Maps",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24332564"
+	},
+	"item": [
+		{
+			"name": "Add a Locations",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzZkNDAzYmFmNjBmMzAwMTc1MzQ1OGQiLCJpYXQiOjE2NjgxMDUzNzksImV4cCI6MTY2ODE5MTc3OX0.6OhVyY8Qy6j_8ZmuudGOK8O140d48dvGVUUmT-UROCA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"location\":{\r\n        \"lat\" : -38.383494,\r\n        \"lng\" : 33.427362\r\n    },\r\n    \"accuracy\":50,\r\n    \"name\":\"Frontline house\",\r\n    \"phone_number\":\"(+91) 983 893 3937\",\r\n    \"address\" : \"29, side layout, cohen 09\",\r\n    \"types\": [\"shoe park\",\"shop\"],\r\n    \"website\" : \"http://google.com\",\r\n    \"language\" : \"French-IN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://216.10.245.166/maps/api/place/add/json?key=qaclick123",
+					"protocol": "http",
+					"host": [
+						"216",
+						"10",
+						"245",
+						"166"
+					],
+					"path": [
+						"maps",
+						"api",
+						"place",
+						"add",
+						"json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "qaclick123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Location",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"place_id\":\"22f54c1cb91c90dce052536bd73689df\"          \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://216.10.245.166/maps/api/place/delete/json?key=qaclick123",
+					"protocol": "http",
+					"host": [
+						"216",
+						"10",
+						"245",
+						"166"
+					],
+					"path": [
+						"maps",
+						"api",
+						"place",
+						"delete",
+						"json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "qaclick123"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
